@@ -1,0 +1,39 @@
+{
+  "name": "js-pro-hw-2",
+  "version": "1.0.0",
+  "description": "promiseReduce",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "prettier --check . && eslint --ext .js .",
+    "lint:fix": "prettier --write . && eslint --fix --ext .js .",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivan-pl/js-pro-hw-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivan-pl/js-pro-hw-2/issues"
+  },
+  "homepage": "https://github.com/ivan-pl/js-pro-hw-2#readme",
+  "devDependencies": {
+    "eslint": "^8.35.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-import": "^2.27.5",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
+    "prettier": "2.8.2"
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "prettier --write",
+      "eslint --cache --fix --ext .js"
+    ],
+    "*.{md,json}": "prettier --write"
+  }
+}
